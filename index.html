@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>TaskOrganizer</title>
+</head>
+<body class="dark_mode">
+    <header>
+        <ul class="unorderList topBarMain">
+            <li id="topBar1">
+                <a href="#" class="taskManagerLabel">
+                    <i class="fa-solid fa-bars-progress"></i>
+                    <span>TaskManager</span>
+                </a>
+            </li>
+            <li id="topBar2" class="taskSection">
+                <a href="#" id="taskLabel">
+                    <span>Tasks</span>
+                </a>
+            </li>
+            <li id="topBar2" class="dashBoardSection">
+                <a href="#" id="taskLabel" >
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li id="topBar3">
+                <a href="#" id="createTaskLabel">
+                    <i class="fa-solid fa-plus"></i>
+                    <span>Create Task</span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <aside>
+        <nav>
+            <ul class="unorderList sideBar">
+                <li id="sideBar">
+                    <a href="#" class="menu">
+                        <span>MENU</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="items dashboard">
+                        <i class="fa-solid fa-table-columns"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="items tasks">
+                        <i class="fa-solid fa-list-check"></i>
+                        <span>Tasks</span>
+                    </a>
+                </li>
+                <li id="sideBarSettings">
+                    <a href="#" class="items darkModeButton">
+                        <i class="fa-solid fa-moon"></i>
+                        <span>Dark mode</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <section class="sections taskSection">
+            <h1>Task</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos omnis porro voluptatum cupiditate, qui reiciendis at ad ullam deleniti labore quo excepturi quibusdam quam repudiandae voluptas doloremque ratione officia corporis.</p>
+        </section>
+
+        <section class="sections dashBoardSection">
+            <h1>Dashboard</h1>
+            <p>Eos omnis porro voluptatum cupiditate, qui reiciendis at ad ullam deleniti labore quo excepturi quibusdam quam repudiandae voluptas doloremque ratione officia corporis Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos omnis porro voluptatum cupiditate, qui reiciendis at ad ullam deleniti labore quo excepturi quibusdam quam repudiandae voluptas doloremque ratione officia corporis.</p>
+        </section>
+    </main>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/darkmode.js" defer></script>
+</body>
+</html>

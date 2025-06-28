@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --sb-width: 5rem;
+    font-family: Inter;
+    background-color: var(--create-button-color);
+    border-color: var(--blue-color);
+    color: var(--general-text-borders);
+}
+:root{
+  --create-button-color: #faf6f6;
+  --blue-color: rgba(55,114,255,255);
+  --blue-text-color: rgba(58,114,255,255);
+  --sideBar-text-color: rgba(101,115,138,255);
+  --general-text-borders: #141414;
+  
+}
+
+.dark_mode{
+  --create-button-color: #0b0c0e;
+  --blue-color: #faf6f6;
+  --blue-text-color: #faf6f6;
+  --sideBar-text-color: rgba(101,115,138,255);
+  --tasklabel-text-color: rgba(40,42,45,255);
+  --general-text-borders: #dfdfdf;
+}
+
+.unorderList li{
+  list-style-type: none;
+}
+.unorderList a{
+  text-decoration: none;
+  display: flex;
+}
+.topBarMain{
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid;
+  border-color: var(--general-text-borders);
+  align-items: baseline;
+  margin-top: 1rem;
+  
+}
+.topBarMain a{
+  padding: 1rem;
+}
+#topBar1{
+  display: flex;
+  flex-direction: row;  
+  width: 11.5rem;
+  border-right: solid;
+  border-color: var(--general-text-borders);
+}
+
+
+#topBar3{
+  
+  margin-left: auto;
+}
+
+
+.sideBar{
+    position: fixed;
+    padding: 1rem;
+    top: 5rem;
+    bottom: 0;
+    width: 9.5rem;
+    display: flex;
+    flex-direction: column;
+    border-right: solid;
+    border-color: var(--general-text-borders);
+    color: var(--general-text-borders);
+}
+
+#sideBarSettings{
+  margin-top: auto;
+}
+
+.items{
+  padding-top: 1.5rem;
+}
+/* Buttons and effects styles down here: */
+.topBarMain a{
+  color: var(--general-text-borders);
+  margin-bottom: 1rem;
+}
+.taskManagerLabel{
+  color: var(--blue-text-color);
+  font-weight: bold;
+  font-size: 18px;
+}
+.taskManagerLabel span{
+  margin-left: 0.2rem;
+}
+
+#taskLabel{
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--general-text-borders);
+}
+#createTaskLabel{
+  margin-right: 1rem;
+  border-radius: 20px;
+  background-color: var(--blue-color);
+  color: var(--create-button-color);
+}
+
+#createTaskLabel span{
+  margin-left: 0.3rem;
+}
+/* Side bar buttons and effects styles down here */
+.sideBar a{
+  color: var(--sideBar-text-color);
+}
+.sideBar i{
+  margin-right: 0.8rem;
+}
+#sideBar1{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+}
+.menu{
+  margin-top: 1rem;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+main {
+  margin-left: 5rem;
+  padding: 1rem 7rem;
+  transition: margin-left 0.5s ease-in-out;
+}
+
+/* Items hover */
+.items:hover{
+  background-color: var(--blue-color);
+  color: var(--create-button-color);
+}
+.tasks:hover{
+  background-color: var(--blue-color);
+  color: var(--create-button-color);
+}
+.dashboard:hover{
+  background-color: var(--blue-color);
+  color: var(--create-button-color);
+}
+.items span{
+  color: var(--general-text-borders);
+}
+
+.dashBoardSection{
+  display: none;
+}
+@media (min-width: 768px) {
+  main {
+    margin-left: var(--sb-width);
+  }
+}
