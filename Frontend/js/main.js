@@ -64,32 +64,8 @@ function showHide(){
     }
 }
 
-// function showHide(event) {
-//     if(show){
-//         dashSection.forEach(element => {
-//             element.style.display = 'block'
-//         })
-        
-//         taskSection.forEach(element => {
-//             element.style.display = 'none'
-//         })
-        
-        
-//         show = false
-//     } else{
-//         dashSection.forEach(element => {
-//             element.style.display = 'none'
-            
-//         })
-//         taskSection.forEach(element => {
-//             element.style.display = 'block'
-//         })        
+const darkBody = document.getElementById("modeBody");
 
-//         show= true
-//     }
-//     event.preventDefault(); 
-//      console.log("You clicked the link!");
-// }
+const darkButton = document.getElementById('darkModeButton');
 
 
-// console.log()
